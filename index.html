@@ -468,21 +468,63 @@
   }
   .footer-top{height:4px; background:linear-gradient(90deg, var(--green), rgba(32,200,120,.25), var(--green));}
   .footer-grid{
-    display:grid; grid-template-columns:1fr;
-    gap:0;
+    display:grid;
+    grid-template-columns:minmax(240px, 1.6fr) minmax(180px, 1fr) minmax(180px, 1fr);
+    gap:36px;
     padding:48px 24px 30px;
-    text-align:center;
+    align-items:start;
+    text-align:left;
   }
-  .footer-brand{margin:0 auto; max-width:760px;}
-  .footer-brand .brand{color:#fff !important; margin-bottom:12px; font-size:18px; letter-spacing:0.05em;}
+  .footer-brand{
+    margin:0;
+    max-width:none;
+  }
+  .footer-brand .brand{
+    display:inline-flex;
+    flex-direction:row;
+    align-items:center;
+    gap:0.18em;
+    color:#fff !important;
+    margin-bottom:16px;
+    font-size:20px;
+    letter-spacing:0.04em;
+    font-weight:800;
+  }
   .footer-brand .brand span{color:var(--green) !important;}
-  .footer-brand p{font-size:13.5px; line-height:1.75; color:rgba(255,255,255,.75);}
-  .footer-bottom{
-    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;
-    padding:22px 24px; border-top:1px solid rgba(255,255,255,.12);
-    font-family:'JetBrains Mono', monospace; font-size:11.1px; color:rgba(255,255,255,.52);
+  .footer-brand p{font-size:13.5px; line-height:1.75; color:rgba(255,255,255,.75); margin:0;}
+  .footer-links-column{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    align-items:flex-start;
+    text-align:left;
   }
-  .footer-bottom span{display:block; min-width:180px;}
+  .footer-links-column .footer-heading{
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    font-size:11px;
+    color:rgba(255,255,255,.85);
+    font-family:'JetBrains Mono', monospace;
+  }
+  .footer-links-column a{
+    font-size:13.5px;
+    color:rgba(255,255,255,.75);
+    transition:color .2s, transform .2s;
+  }
+  .footer-links-column a:hover{color:var(--green); transform:translateX(2px);}
+  .footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:8px;
+    padding:22px 24px;
+    border-top:1px solid rgba(255,255,255,.12);
+    font-family:'JetBrains Mono', monospace;
+    font-size:11.1px;
+    color:rgba(255,255,255,.52);
+  }
+  .footer-bottom span{display:block; min-width:auto;}
 
   @media (max-width:720px){
     .nav-toggle{display:flex;}
@@ -583,11 +625,26 @@ body.dark-mode .glass-card{
   color:#20c878;
 }
 .timeline{
-  border-left:2px solid #20c878;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:28px;
+  max-width:760px;
+  margin:0 auto;
   padding-left:30px;
+  border-left:2px solid var(--green);
 }
 .timeline-item{
-  margin-bottom:30px;
+  width:100%;
+  max-width:720px;
+  margin-bottom:0;
+}
+.timeline-item h3{
+  margin-bottom:10px;
+}
+.timeline-item p{
+  margin:0 auto;
 }
 .project-card{
   transition:.35s;
@@ -852,8 +909,22 @@ body.dark-mode .glass-card{
   <div class="footer-top"></div>
   <div class="wrap footer-grid">
     <div class="footer-brand">
-      <div class="brand">KEBIR<span>.ALI</span></div>
-      <p>Développeur Web Full-Stack — solutions numériques pour PME, établissements et professionnels d'Afrique .</p>
+      <div class="brand"><span class="brand-main">KEBIR</span><span>.ALI</span></div>
+      <p>Développeur Web Full-Stack — solutions numériques pour PME, établissements et professionnels d'Afrique centrale.</p>
+    </div>
+    <div class="footer-links-column">
+      <span class="footer-heading">Navigation</span>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-links-column">
+      <span class="footer-heading">Ailleurs</span>
+      <a href="https://github.com/abdallami" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://wa.me/22781708034" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:elikebir381@gmail.com">Email</a>
     </div>
   </div>
   <div class="wrap footer-bottom">

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Kebir Eli — CV</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 210mm; min-height: 297mm; font-family: 'Helvetica', 'Arial', sans-serif; color: #2b2d2f; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { display: flex; }
+
+  .sidebar {
+    width: 68mm;
+    background: #141518;
+    color: #e8eaec;
+    padding: 18mm 9mm 15mm 9mm;
+  }
+  .avatar {
+    width: 38mm; height: 38mm;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 7mm;
+    border: 2px solid #20c878;
+  }
+  .sidebar .contact-line { font-size: 9pt; line-height: 1.45; margin-bottom: 1.4mm; word-break: break-all; }
+  .sidebar h3 {
+    font-size: 9.5pt;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    margin: 5.5mm 0 2mm;
+    color: #ffffff;
+  }
+  .sidebar p, .sidebar li { font-size: 9pt; line-height: 1.45; color: #cfd2d5; }
+  .sidebar ul { list-style: none; }
+  .sidebar ul li { margin-bottom: 1mm; font-weight: 600; color: #ffffff; }
+
+  .main {
+    flex: 1;
+    padding: 15mm 12mm 12mm 12mm;
+    background: #ffffff;
+  }
+  .name { font-size: 24pt; font-weight: 800; color: #141518; line-height: 1.05; }
+  .role { font-size: 13pt; font-weight: 700; color: #20c878; margin-bottom: 3.5mm; }
+  .intro { font-size: 9.5pt; line-height: 1.45; color: #35383b; margin-bottom: 4.5mm; }
+
+  .section { margin-bottom: 4mm; }
+  .section h2 {
+    font-size: 12pt;
+    font-weight: 800;
+    color: #141518;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    padding-bottom: 1mm;
+    border-bottom: 1.5px solid #20c878;
+    margin-bottom: 2.5mm;
+  }
+  .block { margin-bottom: 2.5mm; }
+  .block h4 { font-size: 10pt; font-weight: 700; color: #141518; margin-bottom: 0.3mm; }
+  .block .meta { font-size: 9pt; font-style: italic; color: #6a6d70; margin-bottom: 0.5mm; }
+  .block p { font-size: 9.5pt; line-height: 1.4; color: #35383b; }
+  .skill-line { font-size: 9.5pt; line-height: 1.45; margin-bottom: 0.8mm; color: #35383b; }
+  .skill-line b { color: #141518; }
+  .note { font-size: 8.5pt; font-style: italic; color: #6a6d70; margin-top: 1mm; }
+</style>
+</head>
+<body>
+
+<aside class="sidebar">
+  <img class="avatar" src="photo.jpg" alt="Kebir Eli">
+
+  <div class="contact-line">elikebir381@gmail.com</div>
+  <div class="contact-line">Cité Caisse, Niamey</div>
+  <div class="contact-line">Niamey, Niger</div>
+  <div class="contact-line">Tél : +227 81 70 80 34</div>
+
+  <h3>LANGUES</h3>
+  <ul>
+    <li>Arabe</li>
+    <li>Français</li>
+    <li>Anglais</li>
+  </ul>
+
+  <h3>ATOUTS</h3>
+  <p>Motivé et capable de m'adapter rapidement à une nouvelle stack technique. Habitué à travailler seul comme en petite équipe, du cahier des charges jusqu'à la mise en production.</p>
+
+  <h3>IA AU QUOTIDIEN</h3>
+  <p>J'intègre Claude, ChatGPT et les outils de développement assistés par IA à mon workflow pour livrer plus vite et avec plus de qualité.</p>
+
+  <h3>CENTRES D'INTÉRÊT</h3>
+  <p>Programmation, développement web &amp; mobile, veille technologique.</p>
+
+  <h3>RÉSEAUX SOCIAUX</h3>
+  <p>GitHub : abdallami</p>
+  <p>Portfolio : abdallami.github.io/mon-portfolio</p>
+</aside>
+
+<main class="main">
+  <h1 class="name">Kebir Eli</h1>
+  <div class="role">Développeur Web &amp; Mobile Full-Stack</div>
+  <p class="intro">
+    Titulaire d'une Licence en Génie Logiciel, développeur web &amp; mobile. Je conçois des applications
+    complètes — du frontend au backend — avec Next.js et React Native / Expo, à travers plusieurs
+    projets personnels menés de bout en bout, du cahier des charges jusqu'à la mise en production.
+    J'ai intégré l'IA (Claude, GPT) à mon travail quotidien pour accélérer la livraison et renforcer
+    la qualité du code.
+  </p>
+
+  <div class="section">
+    <h2>Diplômes et Formations</h2>
+    <div class="block">
+      <h4>Licence en Génie Logiciel</h4>
+      <div class="meta">Depuis octobre 2023 — Niamey, Niger</div>
+    </div>
+    <div class="block">
+      <h4>Tronc commun — Informatique</h4>
+      <div class="meta">Octobre 2023 — Niamey (Commune II), Niger</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Compétences Techniques</h2>
+    <div class="skill-line"><b>Web —</b> Next.js 16 (App Router), React 19, Angular, TypeScript, HTML, CSS, JavaScript, Tailwind CSS, DaisyUI</div>
+    <div class="skill-line"><b>Mobile —</b> React Native, Expo, Android / iOS</div>
+    <div class="skill-line"><b>Backend &amp; API —</b> Node.js (Next.js API Routes), Prisma ORM, Python</div>
+    <div class="skill-line"><b>Bases de données —</b> PostgreSQL, Supabase, MySQL, Oracle</div>
+    <div class="skill-line"><b>Authentification —</b> Clerk, NextAuth.js</div>
+    <div class="skill-line"><b>Outils &amp; IA —</b> Git &amp; GitHub, VS Code, Claude, ChatGPT, Copilot</div>
+    <p class="note">Technologies pratiquées activement au cours des deux dernières années, à travers des projets personnels réels.</p>
+  </div>
+
+  <div class="section">
+    <h2>Projets Réalisés</h2>
+    <div class="block">
+      <h4>ModernBiz — projet de licence</h4>
+      <p>SaaS multi-tenant de gestion commerciale pour PME d'Afrique (facturation, stock, trésorerie, catalogue) — Next.js 16, React 19, Prisma, Clerk, génération de factures PDF.</p>
+    </div>
+    <div class="block">
+      <h4>Kribb — Application mobile de gestion immobilière</h4>
+      <p>App mobile de mise en relation propriétaires / locataires, recherche de biens et publication d'annonces — React Native, Expo, TypeScript.</p>
+    </div>
+    <div class="block">
+      <h4>Site web AEESTN</h4>
+      <p>Site vitrine et espace d'administration pour l'Association des Élèves, Étudiants et Stagiaires Tchadiens au Niger — Next.js, Tailwind/DaisyUI, Prisma, Supabase, NextAuth.js.</p>
+    </div>
+    <div class="block">
+      <h4>Plateforme de casier judiciaire (prototype)</h4>
+      <p>Prototype fonctionnel de dématérialisation des demandes de casier judiciaire — Next.js, Prisma, Supabase.</p>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
